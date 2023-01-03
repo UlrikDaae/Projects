@@ -13,7 +13,6 @@ Ulrik
 
 I start with:
 
-{r}
 library(tidyverse) # 
 life_expect <- read_csv("Life Expectancy Data.csv") # Reading in data
 
@@ -23,8 +22,8 @@ str(life_expect)
 
 After loading in the data, I created a table with the columns I wanted to look at. These names were unpractical. Some had single quotes around them and they didn't have underscores between words.
 
-{r}
 # Creating a first basic selection of collumns I want to look at. Renaming for ease. 
+
 basics_df <- life_expect %>% 
   rename(
     country = Country,
@@ -38,7 +37,6 @@ basics_df <- life_expect %>%
 
 Let's first make a general histogram of what the general life expectancy is. To not overpopulate the graph too much, we're only looking at the period 2010-2015.
 
-{r}
 life_year <- basics_df %>% 
   select(life_expectancy,
          year) %>% 
