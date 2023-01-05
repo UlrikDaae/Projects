@@ -2,4 +2,6 @@
 
 Welcome to my analysis projects! 
 
-This is still a work in progress, but enjoy the view!
+This is a work in progress, but I currently showcase two analysis projects in Excel, and one in R.
+
+Ulrik 
